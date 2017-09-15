@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class SalutiController {
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public String unSaluto(Model model) {
         model.addAttribute("nome", "David");
         return "ciao-mondo";
